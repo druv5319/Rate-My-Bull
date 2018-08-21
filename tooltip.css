@@ -1,0 +1,31 @@
+
+.rating {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+    font: inherit;
+    font-size: 14px;
+}
+
+.rating .tooltiptext {
+    visibility: hidden;
+    width: 175px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    right: 105%; 
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.rating:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
