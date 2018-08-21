@@ -5,4 +5,4 @@ Hover over the score to view more information or click on the score to open up t
 
 https://ibb.co/mziiNe
 ![alt text](https://ibb.co/mziiNe)
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.jpg)
