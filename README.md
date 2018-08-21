@@ -3,4 +3,5 @@ A Rate My Professor chrome extension for USF (University of South Florida) stude
 
 Hover over the score to view more information or click on the score to open up the professors profile on Ratemyprofessor.com
 
-[alt text](https://raw.githubusercontent.com/druv5319/Rate-My-Bull/branch/path/to/screenshot.png)
+https://ibb.co/mziiNe
+![alt text](https://ibb.co/mziiNe)
