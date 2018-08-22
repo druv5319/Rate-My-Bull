@@ -39,8 +39,7 @@ function runExtension(){
 for (var i = 0; i < professorElementNode.length; i++) {	
 	var rating;
 	var wouldTakeAgain;
-	var difficulty;
-	var pkID;	
+	var difficulty;	
 	const parentNode = professorElementNode[i].parentNode;
 	const ratingElement = document.createElement('a');
 	const tooltiptext = document.createElement('span')
@@ -52,7 +51,7 @@ for (var i = 0; i < professorElementNode.length; i++) {
 
 	var profUrl = 'https://search.mtvnservices.com/typeahead/suggest/?solrformat=true&rows=20&q=' + professorsArray[i].first +'+'+ professorsArray[i].last + '+AND+schoolid_s%3A1262&defType=edismax&qf=teacherfirstname_t%5E2000+teacherlastname_t%5E2000+teacherfullname_t%5E2000+autosuggest&bf=pow(total_number_of_ratings_i%2C2.1)&sort=total_number_of_ratings_i+desc&siteName=rmp&rows=20&start=0&fl=pk_id+teacherfirstname_t+teacherlastname_t+total_number_of_ratings_i+averageratingscore_rf+schoolid_s&fq=';
 	Get(profUrl, function(err, data) {
-		pkID = data.response.docs.map(doc => doc.pk_id);
+		const pkID = data.response.docs.map(doc => doc.pk_id);
 		if (pkID[0] == null){
 			reviewElement.innerText = "Professor not found";
 		}
